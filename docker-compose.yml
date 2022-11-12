@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  geodatamanager:
+    image: ${DOCKER_REGISTRY-}geodatamanager
+    build:
+      context: .
+      dockerfile: GeodataManager/Dockerfile

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeoDataManager</name>
+    </assembly>
+    <members>
+        <member name="M:GeoDataManager.Contracts.IHttpRequestService.GetAsync``1(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            Execute request by  
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="httpRequestMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoDataManager.Contracts.IHttpRequestService.PostAsync``1(System.Net.Http.HttpRequestMessage,GeoDataManager.Contracts.IDataRequest)">
+            <summary>
+            Make request by using POST http method
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="httpRequestMessage"></param>
+            <param name="dataRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoDataManager.Controllers.GeoDataController.GetGeoDataByAddress(GeoDataManager.Dto.AddressDto)">
+            <summary>
+            Get geo-data by address
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GeoDataManager.Controllers.GeoDataController.GetNearest10AddressesByGeoData(GeoDataManager.Dto.GeoDataDto)">
+            <summary>
+            Get nearest 10 advanced addresses by geo-data
+            </summary>
+            <param name="geoData"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
